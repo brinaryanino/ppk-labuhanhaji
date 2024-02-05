@@ -1,0 +1,201 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8; /* Warna latar belakang halaman */
+  color: #333; /* Warna teks utama */
+}
+
+h1,
+h2,
+h3 {
+  color: #cc0000; /* Warna judul */
+}
+
+a {
+  color: #cc0000; /* Warna link */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff; /* Warna latar belakang header */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: #cc0000; /* Warna latar belakang navigasi */
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff; /* Warna teks navigasi */
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Main Content Styles */
+section {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* Warna latar belakang konten */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Candidate Profile Styles */
+.candidate-profile {
+  margin-bottom: 20px;
+}
+
+.candidate-profile img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Guide Section Styles */
+.guide-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.guide-section h3 {
+  color: #cc0000; /* Warna judul sub-bagian */
+  cursor: pointer;
+}
+
+.guide-section p {
+  color: #333; /* Warna teks isi paragraf */
+  line-height: 1.5;
+}
+
+/* Dropdown Styles */
+.dropdown-content {
+  display: none;
+}
+
+.guide-section.open .dropdown-content {
+  display: block;
+}
+
+/* Styling for Jadwal Acara */
+#schedule {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* Warna latar belakang jadwal acara */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+.schedule-table {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.schedule-row {
+  display: flex;
+  border-bottom: 1px solid #ccc; /* Garis pembatas antar baris */
+}
+
+.schedule-cell {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Styling for Header Baris Jadwal */
+.schedule-row.header {
+  font-weight: bold;
+  background-color: #f8f8f8; /* Warna latar belakang header */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #cc0000; /* Warna latar belakang footer */
+  color: #fff; /* Warna teks footer */
+  padding: 30px 0;
+  text-align: center; /* Pusatkan teks pada footer */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  border-bottom: 2px solid #fff; /* Garis bawah pada judul */
+  padding-bottom: 10px;
+  color: #fff; /* Warna teks footer */
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+  color: #fff; /* Warna teks footer */
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+  }
+}
+
+/* Pesan Berjalan Styles */
+.footer-marquee {
+  color: #fff; /* Warna teks pesan berjalan */
+  font-size: 16px;
+  padding: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer-section {
+    width: 100%;
+  }
+
+  .footer-marquee {
+    font-size: 14px;
+  }
+}
